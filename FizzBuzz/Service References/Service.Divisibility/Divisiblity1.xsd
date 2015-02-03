@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="FizzBuzz.CalcService" elementFormDefault="qualified" targetNamespace="FizzBuzz.CalcService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ServiceTest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceTestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ServiceTestResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Divisibility">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dividends" type="xs:int" />
+        <xs:element minOccurs="0" name="firstDivisor" type="xs:int" />
+        <xs:element minOccurs="0" name="secondDivisor" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DivisibilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DivisibilityResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
